@@ -1,0 +1,71 @@
+*{
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.dark-theme{
+  --nextui-colors-background: transparent;
+  --nextui-colors-backgroundAlpha: transparent;
+}
+.nextui-c-hhqfap-ihvDtrs-css{
+  background: transparent;
+}
+.shadow{
+  box-shadow:0px 0px 20px 7px #46854829;
+}
+.glow {
+  text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 1px #7828c8, 0 0 15px #7828c8, 0 0 20px #7828c8, 0 0 0px #7828c8, 0 0 0px #7828c8
+}
+.glow-green {
+  text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 1px #468548, 0 0 15px #468548, 0 0 20px #468548, 0 0 0px #468548, 0 0 0px #468548;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+.glow-black {
+  text-shadow:0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 1px #e8e8e8, 0 0 15px #fcfcfc, 0 0 20px #000000, 0 0 0px #f1f1f1, 0 0 0px #000000
+}
+.parent {
+  /* 1️⃣ enable scrolling */
+  overflow: auto;
+    
+  /* 2️⃣ enable scroll-snapping on horizontal axis */
+  scroll-snap-type: y mandatory; 
+}
+
+.child {
+  /* 3️⃣ snap to the start of the element*/
+  scroll-snap-align: start;
+}
+.nextui-c-hhqfap-gaIaSO-variant-static {
+  position: fixed;
+}
+.image-container {
+  width: 100%;
+}
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+.rotate{
+  animation: rotation 6s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: scale3d(1,1,1);
+  }
+  to {
+    transform: scale3d(-1,-1,-1);
+  }
+}
